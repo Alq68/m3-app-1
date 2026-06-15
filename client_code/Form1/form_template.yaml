@@ -1,5 +1,18 @@
 components:
-- components: []
+- components:
+  - components:
+    - layout_properties: {grid_position: 'CDQWYL,SEJUXC'}
+      name: player_name
+      properties: {placeholder: Player 1, text: Player 1}
+      type: TextBox
+    layout_properties: {grid_position: 'JXBAUM,IKUAFJ'}
+    name: column_panel_1
+    properties: {}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'JXBAUM,AZTZBB'}
+    name: player_score
+    properties: {content: '0'}
+    type: RichText
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
