@@ -13,10 +13,19 @@ components:
     name: player_score
     properties: {content: '0'}
     type: RichText
+  - event_bindings: {}
+    layout_properties: {grid_position: 'JXBAUM,QHCSQK'}
+    name: add_score
+    properties: {icon: 'fa:plus', role: filled-button, text: ''}
+    type: Button
+  - layout_properties: {grid_position: 'JXBAUM,JGRVWM'}
+    name: sub_score
+    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
+    type: Button
   - components:
     - layout_properties: {grid_position: 'ZKKMFS,QRXKZW'}
       name: Player2_name
-      properties: {text: Player 2}
+      properties: {placeholder: Player 2, text: Player 2}
       type: TextBox
     layout_properties: {grid_position: 'BMYIEC,QMSUMT'}
     name: column_panel_2
@@ -26,32 +35,56 @@ components:
     name: player2_score
     properties: {content: '0'}
     type: RichText
+  - layout_properties: {grid_position: 'BMYIEC,DAGNUE'}
+    name: add2_score
+    properties: {icon: 'fa:plus', role: filled-button, text: ''}
+    type: Button
+  - layout_properties: {grid_position: 'BMYIEC,ZICXUG'}
+    name: sub2_score
+    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
+    type: Button
   - components:
     - layout_properties: {grid_position: 'DAXURA,CLUCSA'}
       name: player3_name
-      properties: {text: Player 3}
+      properties: {placeholder: Player 3, text: Player 3}
       type: TextBox
     layout_properties: {grid_position: 'HVVDSD,WDBVJT'}
     name: column_panel_3
     properties: {}
     type: ColumnPanel
   - layout_properties: {grid_position: 'HVVDSD,WLMZSA'}
-    name: rich_text_1
+    name: player3_score
     properties: {content: '0'}
     type: RichText
+  - layout_properties: {grid_position: 'HVVDSD,RIGIRM'}
+    name: add3_score
+    properties: {icon: 'fa:plus', role: filled-button, text: ''}
+    type: Button
+  - layout_properties: {grid_position: 'HVVDSD,BJKCDB'}
+    name: sub3_score
+    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
+    type: Button
   - components:
     - layout_properties: {grid_position: 'XFVXUL,JUPTTG'}
       name: player4_name
-      properties: {text: Player 3}
+      properties: {placeholder: Player 4, text: Player 4}
       type: TextBox
     layout_properties: {grid_position: 'BIWCPH,PULINT'}
     name: column_panel_4
     properties: {}
     type: ColumnPanel
   - layout_properties: {grid_position: 'BIWCPH,YNJAYM'}
-    name: rich_text_3
+    name: player4_score
     properties: {content: '0'}
     type: RichText
+  - layout_properties: {grid_position: 'BIWCPH,SQPFGI'}
+    name: add4_score
+    properties: {icon: 'fa:plus', role: filled-button, text: ''}
+    type: Button
+  - layout_properties: {grid_position: 'BIWCPH,ZNSXWN'}
+    name: sub4_score
+    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
