@@ -3,7 +3,7 @@ components:
   - components:
     - layout_properties: {grid_position: 'CDQWYL,SEJUXC'}
       name: player_name
-      properties: {placeholder: Player 1, text: Player 1}
+      properties: {foreground: crimson, placeholder: Player 1, text: Player 1}
       type: TextBox
     layout_properties: {grid_position: 'JXBAUM,IKUAFJ'}
     name: column_panel_1
@@ -11,21 +11,17 @@ components:
     type: ColumnPanel
   - layout_properties: {grid_position: 'JXBAUM,AZTZBB'}
     name: player_score
-    properties: {content: '0'}
+    properties: {content: '0', foreground: lightgreen}
     type: RichText
   - event_bindings: {}
     layout_properties: {grid_position: 'JXBAUM,QHCSQK'}
     name: add_score
     properties: {icon: 'fa:plus', role: filled-button, text: ''}
     type: Button
-  - layout_properties: {grid_position: 'JXBAUM,JGRVWM'}
-    name: sub_score
-    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
-    type: Button
   - components:
     - layout_properties: {grid_position: 'ZKKMFS,QRXKZW'}
       name: Player2_name
-      properties: {placeholder: Player 2, text: Player 2}
+      properties: {foreground: lightgreen, placeholder: Player 2, text: Player 2}
       type: TextBox
     layout_properties: {grid_position: 'BMYIEC,QMSUMT'}
     name: column_panel_2
@@ -33,20 +29,16 @@ components:
     type: ColumnPanel
   - layout_properties: {grid_position: 'BMYIEC,CDPAPP'}
     name: player2_score
-    properties: {content: '0'}
+    properties: {content: '0', foreground: crimson}
     type: RichText
   - layout_properties: {grid_position: 'BMYIEC,DAGNUE'}
     name: add2_score
     properties: {icon: 'fa:plus', role: filled-button, text: ''}
     type: Button
-  - layout_properties: {grid_position: 'BMYIEC,ZICXUG'}
-    name: sub2_score
-    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
-    type: Button
   - components:
     - layout_properties: {grid_position: 'DAXURA,CLUCSA'}
       name: player3_name
-      properties: {placeholder: Player 3, text: Player 3}
+      properties: {foreground: lightblue, placeholder: Player 3, text: Player 3}
       type: TextBox
     layout_properties: {grid_position: 'HVVDSD,WDBVJT'}
     name: column_panel_3
@@ -54,20 +46,16 @@ components:
     type: ColumnPanel
   - layout_properties: {grid_position: 'HVVDSD,WLMZSA'}
     name: player3_score
-    properties: {content: '0'}
+    properties: {content: '0', foreground: purple}
     type: RichText
   - layout_properties: {grid_position: 'HVVDSD,RIGIRM'}
     name: add3_score
     properties: {icon: 'fa:plus', role: filled-button, text: ''}
     type: Button
-  - layout_properties: {grid_position: 'HVVDSD,BJKCDB'}
-    name: sub3_score
-    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
-    type: Button
   - components:
     - layout_properties: {grid_position: 'XFVXUL,JUPTTG'}
       name: player4_name
-      properties: {placeholder: Player 4, text: Player 4}
+      properties: {foreground: purple, placeholder: Player 4, text: Player 4}
       type: TextBox
     layout_properties: {grid_position: 'BIWCPH,PULINT'}
     name: column_panel_4
@@ -75,29 +63,43 @@ components:
     type: ColumnPanel
   - layout_properties: {grid_position: 'BIWCPH,YNJAYM'}
     name: player4_score
-    properties: {content: '0'}
+    properties: {content: '0', foreground: lightblue}
     type: RichText
   - layout_properties: {grid_position: 'BIWCPH,SQPFGI'}
     name: add4_score
     properties: {icon: 'fa:plus', role: filled-button, text: ''}
     type: Button
-  - layout_properties: {grid_position: 'BIWCPH,ZNSXWN'}
-    name: sub4_score
-    properties: {background: red, icon: 'fa:minus', role: filled-button, text: ''}
-    type: Button
   layout_properties: {slot: default}
   name: content_panel
-  properties: {col_widths: '{}'}
+  properties: {background: lightpink, border: '', col_widths: '{}'}
   type: ColumnPanel
-- layout_properties: {slot: nav-right}
+- components:
+  - layout_properties: {width: 47.5749755859375}
+    name: image_1
+    properties: {height: 46, source: _/theme/sugar rush resort logo.png}
+    type: Image
+  layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
   type: FlowPanel
 - layout_properties: {slot: title}
   name: label_1
-  properties: {role: headline, text: Hello world}
+  properties: {background: '', foreground: '', role: headline, text: Sugar rush}
   type: Label
+- components:
+  - layout_properties: {grid_position: 'JWGIJB,RYDGGJ'}
+    name: How_to2
+    properties: {background: '', foreground: purple, text: How to play}
+    type: Link
+  - layout_properties: {grid_position: 'YUXDQN,EEONWH'}
+    name: Homepage_2
+    properties: {foreground: purple, text: Homepage}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_5
+  properties: {background: crimson}
+  type: ColumnPanel
 container:
-  properties: {html: '@theme:standard-page.html'}
+  properties: {background: lightgreen, html: '@theme:standard-page.html'}
   type: HtmlTemplate
 is_package: true

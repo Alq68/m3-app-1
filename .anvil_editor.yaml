@@ -1,9 +1,12 @@
 unique_ids:
   assets:
     standard-page.html: PPTFBAN7D5VRCM2M7RVYQM3T6A6LRK4N
+    sugar rush resort logo.png: '1781603529474105261687700.0141'
     theme.css: CVBHJZIDLAXUHGWMVLQPTHZ7CSFN6QJB
   forms:
-    Form1: 2WC7JO4V4T2EXRIQLU6U4RG23GTPNAM3
+    homepage: '1781599958027309901516964.4399'
+    homepage.How_to_play: '1781599968845265240183469.47043'
+    homepage.Score_tracker: 2WC7JO4V4T2EXRIQLU6U4RG23GTPNAM3
   modules: {}
   scripts: {}
   server_modules: {}

@@ -1,0 +1,42 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'VDORJC,DJNXSM'}
+    name: rich_text_1
+    properties: {background: '', content: Sugar rush is 4 player board game about looping round the board a certain number of times and keeping score using this site}
+    type: RichText
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {background: purple}
+  type: ColumnPanel
+- components:
+  - layout_properties: {width: 37}
+    name: image_1
+    properties: {height: 31.599990844726562, source: _/theme/sugar rush resort logo.png}
+    type: Image
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {text: Sugar rush guide}
+  type: Label
+- components:
+  - layout_properties: {grid_position: 'VGAXYU,GJIUDO'}
+    name: score_tracker_1
+    properties: {align: center, background: '', foreground: purple, text: Score tracker}
+    type: Link
+  - layout_properties: {grid_position: 'VUBQKJ,SZLKSP'}
+    name: How_to1
+    properties: {align: center, background: '', foreground: purple, text: How to play}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {background: lightgreen, foreground: ''}
+  type: ColumnPanel
+container:
+  properties: {background: lightblue, foreground: crimson, html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
+layout_metadata: {title: Homepage}
+slots: {}
